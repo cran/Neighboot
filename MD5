@@ -1,0 +1,10 @@
+46cc6565660c9b48cdabc211623a7966 *DESCRIPTION
+894244d719bf7adb6e68213e45b4e5ec *NAMESPACE
+2bd781b274400ff7f45289a02de772c8 *R/Neighboot-package.R
+4aa30bd315036d58cea673cd09f770b4 *R/Neighboot.R
+90f7371c3bed11ee2ef46dc6b61675ff *R/to.rds.R
+2b2afc423277fed17c63b56f1b416041 *data/pop.network.rda
+2894521c56675a50d028db4720ef1539 *man/Neighboot-package.Rd
+2b0e76c2e14e7de1aad74eb2f8bc32c4 *man/Neighboot.Rd
+d0a4d0abb0a4a9cc64672603dfc727f5 *man/pop.network.Rd
+3eee34c3fdf22d0cd162ebceb2b4937a *man/to.rds.Rd
