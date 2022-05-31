@@ -3,28 +3,18 @@
 \docType{data}
 \name{pop.network}
 \alias{pop.network}
-\title{Population network dataset}
+\title{Population network}
 \format{
-A list containing two objects:
+A list containing two elements:
 \describe{
-\item{\code{traits}}{a data frame of 4 columns containing the nodes' IDs in its
-                     first column.}
-\item{\code{adj.mat}}{the adjacency matrix of the population network.}
+\item{\code{traits}}{a dataframe of 2000 rows and 4 columns }
+\item{\code{adj.mat}}{an adjacency matrix}
 }
 }
 \usage{
 pop.network
 }
 \description{
-A synthetic population network.
-}
-\details{
-The population network has 2000 nodes and has a density of 5\%.
-Three binary attributes are measured on each node: age (less than 30=1),
-gender (male=1) and education (diploma lower than college's=1).
-}
-\examples{
-#load the population network dataset
-data("pop.network")
+Population network
 }
 \keyword{datasets}

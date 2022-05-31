@@ -2,17 +2,10 @@
 % Please edit documentation in R/Neighboot-package.R
 \docType{package}
 \name{Neighboot-package}
+\alias{Neighboot}
 \alias{Neighboot-package}
-\alias{_PACKAGE}
 \title{Neighboot: Neighborhood Bootstrap Method for RDS}
 \description{
 A bootstrap method for Respondent-Driven Sampling (RDS) that relies on the underlying structure of the RDS network to estimate uncertainty.
-}
-\references{
-Yauck, M. and Moodie, E. E. M. "Neighborhood Bootstrap for
-            Respondent-Driven Sampling". (Manuscript in preparation)
-}
-\author{
-Mamadou Yauck <mamadou.yauck@mcgill.ca> and Erica E. M. Moodie.
 }
 \keyword{internal}

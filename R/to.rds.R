@@ -13,7 +13,7 @@
 #' \item{\code{degree}}{a vector containing each node's degree, or number of social connections. }
 #' }
 #' @return An \code{rds.data.frame} object.
-#' @author Mamadou Yauck <mamadou.yauck@mcgill.ca> and Erica E. M. Moodie.
+#' @author Mamadou Yauck <yauck.mamadou@uqam.ca> and Erica E. M. Moodie.
 #' @export
 #' @importFrom igraph graph_from_data_frame degree ego all_simple_paths V
 #' @importFrom dplyr inner_join

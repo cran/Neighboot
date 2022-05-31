@@ -3,7 +3,7 @@
 #' This function estimate standard errors and compute confidence intervals from
 #' an RDS sample using the neighborhood bootstrap method.
 #'
-#'@usage Neighboot(RDS.data, quant=c(0.025, 0.975),
+#'@usage neighb(RDS.data, quant=c(0.025, 0.975),
 #'       method=c("percentile","Wald"), B=1000)
 #' @param RDS.data A list containing the following objects:
 #' \describe{
@@ -16,11 +16,11 @@
 #' @param method a character string representing the method for computing confidence intervals,
 #'               either \code{percentile} or \code{Wald}. Default is \code{percentile}.
 #' @param B the number of bootstrap repetitions. Default is 1000.
-#' @details The function \code{Neighboot} compute standard errors and confidence intervals using
+#' @details The function \code{neighb} compute standard errors and confidence intervals using
 #'          the neighborhood bootstrap method for RDS. Confidence intervals can be computed using
 #'          the percentile method or the studentized method.
 #' @return A matrix of estimated standard errors and quantiles. Each row represents a trait.
-#' @author Mamadou Yauck <mamadou.yauck@mcgill.ca> and Erica E. M. Moodie.
+#' @author Mamadou Yauck <yauck.mamadou@uqam.ca> and Erica E. M. Moodie.
 #' @export
 #' @importFrom stats qt quantile sd
 #' @importFrom igraph graph_from_data_frame degree ego
@@ -36,8 +36,8 @@
 #'  3, c(1/6,1/3,1/3,1/6), FALSE)
 #'
 #' #Compute 95\% confidence intervals using the percentile method
-#' Neighboot(RDS.data=RDS.samp, quant=c(0.025, 0.975),method="percentile", B=100)
-Neighboot<- function(RDS.data, quant=c(0.025, 0.975),method=c("percentile","Wald"), B=1000) {
+#' neighb(RDS.data=RDS.samp, quant=c(0.025, 0.975),method="percentile", B=100)
+neighb<- function(RDS.data, quant=c(0.025, 0.975),method=c("percentile","Wald"), B=1000) {
   p.est<-apply((RDS.data$traits/RDS.data$degree)/sum(1/RDS.data$degree),2,sum,na.rm=TRUE)
   resamp <- .Nb(RDS.data, B)
   results <- matrix(NA, dim(RDS.data$traits)[2], (length(quant)+1))

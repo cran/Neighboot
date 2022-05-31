@@ -38,5 +38,5 @@ require(RDS)
 to.rds(RDS.data=RDS.samp)
 }
 \author{
-Mamadou Yauck <mamadou.yauck@mcgill.ca> and Erica E. M. Moodie.
+Mamadou Yauck <yauck.mamadou@uqam.ca> and Erica E. M. Moodie.
 }
